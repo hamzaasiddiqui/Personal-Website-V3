@@ -87,3 +87,7 @@ export const github: Social = {
 export const resume: Social = {
   link: "./HamzaSiddiquiResume.pdf",
 };
+
+export const instagram: Social = {
+  link: "https://www.instagram.com/hamza.sid_",
+};

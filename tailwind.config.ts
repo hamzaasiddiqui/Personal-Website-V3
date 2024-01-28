@@ -9,10 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        blue: '#313552',
-        pink: '#B8405E',
-        mint: '#2EB086',
-        white: '#EEE6CE',
+        blue: 'rgb(50, 0, 2)',
+        pink: '#EEE6CE',
+        white: '#d3d3d3',
       },
     },
     fontFamily: {
