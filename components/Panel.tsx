@@ -7,6 +7,7 @@ interface PanelProps {
     aboutRef: RefObject<HTMLDivElement>;
     experienceRef: RefObject<HTMLDivElement>;
     projectsRef: RefObject<HTMLDivElement>;
+    skillsRef: RefObject<HTMLDivElement>;
 }
 
 function Panel(props: PanelProps) {
@@ -20,6 +21,10 @@ function Panel(props: PanelProps) {
 
     const scrollToAbout = () => {
         props.aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToSkills = () => {
+        props.skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
   return (
@@ -44,6 +49,10 @@ function Panel(props: PanelProps) {
                 </button>
                 <button className='w-24 group hover:text-pink' onClick={scrollToProjects}>
                     Projects
+                    <div className='w-0 h-1 bg-pink transition-all duration-300 ease-in-out group-hover:w-full' />
+                </button>
+                <button className='w-24 group hover:text-pink' onClick={scrollToSkills}>
+                    Skills
                     <div className='w-0 h-1 bg-pink transition-all duration-300 ease-in-out group-hover:w-full' />
                 </button>
                 <a className='w-24 group text-center hover:text-pink' href={resume.link} target='_blank'>

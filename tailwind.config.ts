@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         blue: 'rgb(50, 0, 2)',
         pink: '#EEE6CE',
-        white: '#d3d3d3',
+        white: '#B2BEB5',
       },
     },
     fontFamily: {

@@ -12,6 +12,7 @@ export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
 
   const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
     ssr: false,
@@ -46,10 +47,10 @@ export default function Home() {
           <meta name="viewport" content="width-device-width, initial-scale=1"></meta>
           <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <Gradientdiv className="w-full h-screen bg-blue overflow-x-hidden overflow-y-scroll flex items-center gap-20 justify-between flow-root">
-        <Panel aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} />
+      <Gradientdiv className="w-full h-screen bg-blue overflow-x-hidden overflow-y-scroll items-center gap-20 justify-between flow-root">
+        <Panel aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} skillsRef={skillsRef} />
         <DummyPanel />
-        <Body aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} />
+        <Body aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} skillsRef={skillsRef} />
       </Gradientdiv>
     </>
   );

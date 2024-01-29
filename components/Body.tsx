@@ -1,12 +1,14 @@
 import React, { RefObject } from 'react'
 import ExperienceCard from './ExperienceCard'
 import ProjectCard from './ProjectCard'
+import SkillCard from './SkillCard'
 import { exp1, exp2, exp3, proj1, proj2, proj3, proj4, proj5, proj6, github, linkedin, resume } from '../public/content' 
 
 interface BodyProps {
     aboutRef: RefObject<HTMLDivElement>;
     experienceRef: RefObject<HTMLDivElement>;
     projectsRef: RefObject<HTMLDivElement>;
+    skillsRef: RefObject<HTMLDivElement>;
 }
 
 function Body(props: BodyProps) {
@@ -41,7 +43,7 @@ function Body(props: BodyProps) {
             </div>
         </div>
 
-        <div ref={props.projectsRef} className='text-white pt-28' id='Projects'>
+        <div ref={props.projectsRef} className='text-white pt-28'>
             <ProjectCard title={proj1.title} description={proj1.description} link={proj1.link} />
             <ProjectCard title={proj2.title} description={proj2.description} link={proj2.link} />
             <ProjectCard title={proj3.title} description={proj3.description} link={proj3.link} />
@@ -49,6 +51,12 @@ function Body(props: BodyProps) {
             <ProjectCard title={proj5.title} description={proj5.description} link={proj5.link} />
             <ProjectCard title={proj6.title} description={proj6.description} link={proj6.link} />
             <a href={github.link} target='_blank' className='text-pink font-semibold'>Visit my GitHub profile →</a>
+        </div>
+
+        <div ref={props.skillsRef} className='text-white pt-28 w-full'>
+            <div className='ml-20'>
+                <SkillCard />
+            </div>
         </div>
 
         <div className= 'pt-32 mb-8 flex flex-col items-center justify-center text-white max-w-2xl text-sm'>

@@ -11,11 +11,11 @@ function ExperienceCard(props:
     <div className="relative block overflow-hidden max-w-2xl pb-8">
         <div className="sm:flex sm:justify-between sm:gap-4">
             <div>
-                <h3 className="text-lg font-bold text-white sm:text-xl">
+                <h3 className="text-lg font-bold text-pink sm:text-xl">
                     {props.title}
                 </h3>
 
-                <p className="mt-1 text-sm font-medium text-gray-300">{props.company}</p>
+                <p className="mt-1 text-sm font-medium text-white">{props.company}</p>
             </div>
 
             <div className="hidden sm:block sm:shrink-0">
@@ -23,7 +23,7 @@ function ExperienceCard(props:
         </div>
 
         <div className="mt-4">
-            <p className="text-base text-gray-300">
+            <p className="text-base text-white">
             {props.description}
             </p>
         </div>
