@@ -4,7 +4,6 @@ import Head from "next/head";
 import { useRef } from "react";
 import Panel from "@/components/Panel";
 import Body from "@/components/Body";
-import DummyPanel from "@/components/DummyPanel";
 import Gradientdiv from "@/components/GradientDiv";
 import dynamic from "next/dynamic";
 
@@ -49,7 +48,6 @@ export default function Home() {
       </Head>
       <Gradientdiv className="w-full h-screen bg-blue overflow-x-hidden overflow-y-scroll items-center gap-20 justify-between flow-root">
         <Panel aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} skillsRef={skillsRef} />
-        <DummyPanel />
         <Body aboutRef={aboutRef} experienceRef={experienceRef} projectsRef={projectsRef} skillsRef={skillsRef} />
       </Gradientdiv>
     </>

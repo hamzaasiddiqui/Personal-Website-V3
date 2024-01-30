@@ -29,7 +29,7 @@ function Panel(props: PanelProps) {
 
   return (
     
-        <div className='h-screen w-2/5 flex flex-col items-center justify-center m-0 p-0 pl-14 pt-10 fixed float-left'>
+        <div className='hidden md:flex lg:flex h-screen w-2/5 flex-col items-center justify-center m-0 p-0 pl-14 pt-10 fixed float-left'>
             <div className='font-titleFont pt-4'>
                 <div className='flex flex-col text-pink text-5xl items-center justify-center'>
                     <div>HAMZA SIDDIQUI</div>

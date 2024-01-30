@@ -13,8 +13,14 @@ interface BodyProps {
 
 function Body(props: BodyProps) {
   return (
-    <div className='font-bodyFont w-3/5 flex flex-col items-center justify-center m-0 p-0 float-right top-0' id='About'>
-
+    <div className='w-screen font-bodyFont md:w-3/5 lg:w-3/5 flex flex-col items-center justify-center m-0 p-0 px-10 md:px-0 float-right top-0' id='About'>
+        <div className='flex flex-col md:hidden items-center text-pink max-w-2xl text-3xl pt-10 md:pt-24 lg:pt-24'>
+            Hamza Siddiqui
+            <div className='text-xl text-white'>computer engineering undergrad</div>
+            <div className='text-xl text-white'>with a passion for web and</div>
+            <div className='text-xl text-white'>software engineering</div>
+        </div>
+        
         <div ref={props.aboutRef} className='text-white max-w-2xl text-xl pt-24'>
             <div className='py-4'>
             Dabbling in problem-solving and coding from a young age, my career aspirations revolve
@@ -36,10 +42,10 @@ function Body(props: BodyProps) {
             <ExperienceCard title={exp1.title} company={exp1.company} description={exp1.description} skills={exp1.skills} />
             <ExperienceCard title={exp2.title} company={exp2.company} description={exp2.description} skills={exp2.skills} />
             <ExperienceCard title={exp3.title} company={exp3.company} description={exp3.description} skills={exp3.skills} />
-            <div className='flex font-semibold'>
-                <a href={resume.link} target='_blank' className='mr-1 text-pink'>View my full resume → </a>
+            <div className='flex flex-col md:flex-row lg:flex-row font-semibold'>
+                <a href={resume.link} target='_blank' className='mr-3 text-pink'>View my full resume → </a>
                 <div> or </div>
-                <a href={linkedin.link} target='_blank' className='ml-1 text-pink'> Visit my LinkedIn profile →</a>
+                <a href={linkedin.link} target='_blank' className='md:ml-3 lg:ml-3 text-pink'> Visit my LinkedIn profile →</a>
             </div>
         </div>
 
@@ -54,7 +60,7 @@ function Body(props: BodyProps) {
         </div>
 
         <div ref={props.skillsRef} className='text-white pt-28 w-full'>
-            <div className='ml-20'>
+            <div className='md:ml-20 lg:ml-20'>
                 <SkillCard />
             </div>
         </div>

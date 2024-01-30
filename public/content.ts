@@ -39,13 +39,13 @@ export const exp3: Experience = {
 export const proj1: Project = {
   title: 'NLP Powered Business Intelligence↗',
   description: "Developed a business intelligence application that uses natural language input to generate custom data visualizations and reports.",
-  link: "https://github.com/hamzaasiddiqui/Traffic-Sign-Detector.git",
+  link: "https://github.com/hamzaasiddiqui/NLP-Powered-BI",
 };
 
 export const proj2: Project = {
   title: 'Traffic Sign Detector↗',
   description: "Designed a custom CNN model to correctly predict traffic signs.",
-  link: "https://github.com/hamzaasiddiqui/NLP-Powered-BI",
+  link: "https://github.com/hamzaasiddiqui/Traffic-Sign-Detector.git",
 };
 
 export const proj3: Project = {
