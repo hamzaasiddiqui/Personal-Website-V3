@@ -33,8 +33,8 @@ function Panel(props: PanelProps) {
             <div className='font-titleFont pt-4'>
                 <div className='flex flex-col text-pink text-5xl items-center justify-center'>
                     <div>HAMZA SIDDIQUI</div>
-                    <div className='text-xl text-white'>computer engineering undergrad</div>
-                    <div className='text-xl text-white'>with a passion for web and software engineering</div>
+                    <div className='text-xl text-white'>Computer Engineering Undergrad</div>
+                    <div className='text-xl text-white'>with a Passion for Web and Software Engineering</div>
                 </div>
             </div>
 
