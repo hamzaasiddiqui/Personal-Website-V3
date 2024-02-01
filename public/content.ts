@@ -81,7 +81,7 @@ export const linkedin: Social = {
 };
 
 export const github: Social = {
-  link: "https://github.com/hamzaasiddiqui/Text-Editor",
+  link: "https://github.com/hamzaasiddiqui/",
 };
 
 export const resume: Social = {

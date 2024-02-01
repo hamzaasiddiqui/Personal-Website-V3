@@ -68,7 +68,7 @@ function Panel(props: PanelProps) {
                 <a className='mr-3' href={github.link} target="_blank">
                     <FaGithub className='text-white hover:text-pink' fontSize="28px" />
                 </a>
-                <a className='mr-3' href={email.link} target="_blank">
+                <a className='mr-3' href={'mailto:' + email.link} target="_blank">
                     <FaEnvelope className='text-white hover:text-pink' fontSize="28px" />
                 </a> 
                 <a className='mr-3' href={instagram.link} target="_blank">
