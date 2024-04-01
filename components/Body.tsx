@@ -14,27 +14,27 @@ interface BodyProps {
 function Body(props: BodyProps) {
   return (
     <div className='w-screen font-bodyFont md:w-3/5 lg:w-3/5 flex flex-col items-center justify-center m-0 p-0 px-10 md:px-0 float-right top-0' id='About'>
-        <div className='flex flex-col md:hidden items-center text-pink max-w-2xl text-3xl pt-10 md:pt-24 lg:pt-24'>
+        <div className='flex flex-col md:hidden text-center items-center text-pink max-w-2xl text-3xl pt-10 md:pt-24 lg:pt-24'>
             Hamza Siddiqui
-            <div className='text-xl text-white'>computer engineering undergrad</div>
-            <div className='text-xl text-white'>with a passion for web and</div>
-            <div className='text-xl text-white'>software engineering</div>
+            <div className='text-xl text-white'>Computer Engineering Undergrad</div>
+            <div className='text-xl text-white'>Full-stack Development, AI/ML, DevOps</div>
         </div>
         
         <div ref={props.aboutRef} className='text-white max-w-2xl text-xl pt-24'>
             <div className='py-4'>
             Dabbling in problem-solving and coding from a young age, my career aspirations revolve
             around the growing tech industry. I enjoy programming, developing logic, and learning
-            about new technology
+            about new technology.
             </div>
             <div className='py-4'>
-            Pursuing a bachelor of science in computer engineering, I am a senior at GIKI &#40;Ghulam Ishaq
+            Pursuing a <span className='text-pink'>bachelor of science in computer engineering</span>, I am a senior at GIKI &#40;Ghulam Ishaq
             Khan Institute of Engineering Sciences and Technology&#41;. As an adaptable and self-driven 
             student, I am always looking forward to benefiting organizations and further grooming 
             my technical, organizational, and interpersonal skills.
             </div>
             <div className='py-4'>
-            During my free time, I like to read, draw, enjoy nature, and play soccer and badminton. 
+            I am proficient in <span className='text-pink'>web development</span>, <span className='text-pink'>AI/ML</span>, and 
+            <span className='text-pink'> DevOps</span>. I primarily work with the <span className='text-pink'>MERN</span> stack.
             </div>
         </div>
 
@@ -65,7 +65,7 @@ function Body(props: BodyProps) {
             </div>
         </div>
 
-        <div className= 'pt-32 mb-8 flex flex-col items-center justify-center text-white max-w-2xl text-sm'>
+        <div className= 'pt-32 mb-8 flex flex-col text-center items-center justify-center text-white max-w-2xl text-sm'>
             <div>
                 Built with <span className='text-pink'>Next.js</span> and <span className='text-pink'>Typescript</span>. Coded in <span className='text-pink'>VS Code</span>
             </div>
