@@ -36,6 +36,12 @@ export const exp3: Experience = {
   skills: ["React.js", "Node.js", "Javascript", "HTML", "CSS", "Firebase", "Bootstrap", "REST APIs", "Git", "Figma"],
 };
 
+export const proj7: Project = {
+  title: 'Workout Management App↗',
+  description: "Created a MERN application allowing users to manage their workouts. Used Express.js, Mongoose, Node, and React.",
+  link: "https://github.com/hamzaasiddiqui/Workout-App.git",
+};
+
 export const proj1: Project = {
   title: 'NLP Powered Business Intelligence↗',
   description: "Developed a business intelligence application that uses natural language input to generate custom data visualizations and reports.",

@@ -2,7 +2,7 @@ import React, { RefObject } from 'react'
 import ExperienceCard from './ExperienceCard'
 import ProjectCard from './ProjectCard'
 import SkillCard from './SkillCard'
-import { exp1, exp2, exp3, proj1, proj2, proj3, proj4, proj5, proj6, github, linkedin, resume } from '../public/content' 
+import { exp1, exp2, exp3, proj1, proj2, proj3, proj4, proj5, proj6, proj7, github, linkedin, resume } from '../public/content' 
 
 interface BodyProps {
     aboutRef: RefObject<HTMLDivElement>;
@@ -51,6 +51,7 @@ function Body(props: BodyProps) {
 
         <div ref={props.projectsRef} className='text-white pt-28'>
             <ProjectCard title={proj1.title} description={proj1.description} link={proj1.link} />
+            <ProjectCard title={proj7.title} description={proj7.description} link={proj7.link} />
             <ProjectCard title={proj2.title} description={proj2.description} link={proj2.link} />
             <ProjectCard title={proj3.title} description={proj3.description} link={proj3.link} />
             <ProjectCard title={proj4.title} description={proj4.description} link={proj4.link} />
