@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaReact, FaBootstrap, FaNodeJs, FaAws, FaDocker, FaGithub, FaLinux, FaFigma } from 'react-icons/fa'
-import { SiCplusplus, SiTailwindcss, SiMysql, SiOracle, SiFlask, SiDjango, SiFirebase, SiTerraform, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si"
+import { SiCplusplus, SiTailwindcss, SiMysql, SiOracle, SiFlask, SiDjango, SiFirebase, SiTerraform, SiAdobeillustrator, SiAdobephotoshop, SiExpress, SiMongodb, SiRedux } from "react-icons/si"
 import { BiLogoTypescript, BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -8,50 +8,260 @@ function SkillCard() {
   return (
     <div className='flex flex-col'>
         <div className='flex flex-row mb-6'>
-            <div className='text-lg font-bold  sm:text-xl mr-2 text-pink'>
-                Core Tools:
+            <div className='text-lg font-bold  sm:text-xl mt-1 mr-12 text-pink'>
+                Core Tools
             </div>
-            <SiCplusplus className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaPython className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <BiLogoJavascript className='text-white hover:text-pink mr-2' fontSize="38px" />
-            <BiLogoTypescript className='text-white hover:text-pink mr-2' fontSize="38px" />
-            <FaGitAlt className='text-white hover:text-pink mr-2' fontSize="34px" />
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiCplusplus className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>C++</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaPython className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Python</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <BiLogoJavascript className='text-blue' fontSize="35px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <BiLogoTypescript className='text-blue' fontSize="35px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>TypeScript</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaGitAlt className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Git</span>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        
         <div className='flex flex-row mb-6'>
-            <div className='text-lg font-bold  sm:text-xl mr-2 text-pink'>
-                Frontend:
+            <div className='text-lg font-bold  sm:text-xl mr-[60px] mt-1 text-pink'>
+                Frontend
             </div>
-            <FaHtml5 className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaCss3Alt className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaReact className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <TbBrandNextjs className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaBootstrap className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiTailwindcss className='text-white hover:text-pink mr-2' fontSize="34px" />
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaHtml5 className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>HTML</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaCss3Alt className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaReact className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>React</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiRedux className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Redux</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <TbBrandNextjs className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Next</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiTailwindcss className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Tailwindcss</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaBootstrap className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div className='flex flex-row mb-6'>
-            <div className='text-lg font-bold  sm:text-xl mr-2 text-pink'>
-                Backend:
+            <div className='text-lg font-bold  sm:text-xl mt-1 mr-[67px] text-pink'>
+                Backend
             </div>
-            <FaNodeJs className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiFlask className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiDjango className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <BiLogoPostgresql className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiMysql className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiOracle className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiFirebase className='text-white hover:text-pink mr-2' fontSize="34px" />
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaNodeJs className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Node</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiExpress className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Express</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiFlask className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Flask</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiDjango className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Django</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiMongodb className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <BiLogoPostgresql className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiMysql className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>MySQL</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiOracle className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>OracleDB</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiFirebase className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Firebase</span>
+                    </div>
+                </div>
+            </div>  
         </div>
+
         <div className='flex flex-row'>
-            <div className='text-lg font-bold  sm:text-xl mr-2 text-pink'>
-                Other Tools:
+            <div className='text-lg font-bold  sm:text-xl mt-1 mr-8 text-pink'>
+                Other Tools
             </div>
-            <FaGithub className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaAws className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaDocker className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiTerraform className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaLinux className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <FaFigma className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiAdobeillustrator className='text-white hover:text-pink mr-2' fontSize="34px" />
-            <SiAdobephotoshop className='text-white hover:text-pink mr-2' fontSize="34px" />
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaGithub className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>GitHub</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaAws className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>AWS</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaDocker className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Docker</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiTerraform className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Terraform</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaLinux className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Linux</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <FaFigma className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Figma</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiAdobephotoshop className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Photoshop</span>
+                    </div>
+                </div>
+            </div>
+            <div className='group'>
+                <div className='flex items-center bg-white rounded-md p-1 mr-2 transition-all duration-300'>
+                    <SiAdobeillustrator className='text-blue' fontSize="34px" />
+                    <div className='flex-0 overflow-hidden transition-all duration-300 max-w-0 group-hover:max-w-xs'>
+                        <span className='text-blue ml-2 whitespace-nowrap font-bold'>Illustrator</span>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
   )
