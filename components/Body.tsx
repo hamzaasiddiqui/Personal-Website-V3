@@ -60,10 +60,8 @@ function Body(props: BodyProps) {
             <a href={github.link} target='_blank' className='text-pink font-semibold'>Visit my GitHub profile →</a>
         </div>
 
-        <div ref={props.skillsRef} className='text-white pt-28 w-full'>
-            <div className='md:ml-20 lg:ml-20'>
-                <SkillCard />
-            </div>
+        <div ref={props.skillsRef} className='text-white pt-28 '>
+            <SkillCard />
         </div>
 
         <div className= 'pt-32 mb-8 flex flex-col text-center items-center justify-center text-white max-w-2xl text-sm'>
