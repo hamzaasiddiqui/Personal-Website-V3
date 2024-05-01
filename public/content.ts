@@ -23,7 +23,7 @@ export const exp1: Experience = {
 };
 
 export const exp2: Experience = {
-  title: "Software Developr Intern",
+  title: "Software Developer Intern",
   company: "Keystone Consulting | June 23 - August 23",
   description: "Led the development of a business intelligence visualization application leveraging Natural Language Processing techniques. Employed Flask, Python, React.js, and Next.js. Integrated LangChain and OpenAI technologies, and authored multiple Python scripts to create a sophisticated chatbot interface.",
   skills: ["React.js", "Next.js", "Javascript", "HTML", "CSS", "Flask", "Python", "Material UI", "Git"],
